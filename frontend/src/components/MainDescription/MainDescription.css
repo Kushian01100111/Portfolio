@@ -1,0 +1,72 @@
+
+
+
+.tech{
+    cursor: grab;
+    float: left;
+    z-index: 1;
+
+}
+
+.techImg{
+    width: 100%;
+    height: auto;
+}
+
+
+.contentDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.portrait{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1090px) {
+    .tech{
+        max-width: 15rem;
+    }
+    .contentDescription{
+        gap: 1.5rem;
+    }
+
+    .containerPortrait{
+        width: 20rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .tech{
+        max-width: 8rem;
+    }
+
+    .tech.react{
+        transform: translateX(-2rem) translatey(20rem);
+    }
+
+    .tech.python{
+        max-width: 5rem;
+        transform: translateX(-7rem) translatey(14rem);
+    }
+
+    .tech.javascript{
+        max-width: 5rem;
+        transform: translateX(16rem) translatey(16rem);
+    }
+
+    .tech.node{
+        transform: translateX(16rem) translatey(16rem);
+    }
+
+}

@@ -1,0 +1,19 @@
+
+.button{
+    font-family: inherit;
+    color: #fff;
+    padding: 1.5rem;
+    border: #fff solid 0.01rem;
+    background: linear-gradient( to left, transparent 50%,  #2C4236 50%) right;
+    background-size: 200%;
+    max-width: 40rem;
+    transition: .5s ease-out;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+
+.button:hover{
+    background-position: left;
+}
+
