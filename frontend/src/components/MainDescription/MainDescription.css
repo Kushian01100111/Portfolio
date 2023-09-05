@@ -1,5 +1,8 @@
 
-
+.description{
+    position: sticky;
+    top: 120px;
+}
 
 .tech{
     cursor: grab;
