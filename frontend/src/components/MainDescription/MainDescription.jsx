@@ -49,7 +49,7 @@ const MainDescription = () => {
                     }}
                     />
                 </div>
-                <div className="tech node">
+                <div className="tech node   ">
                     <m.img src={Logos[8]} 
                     alt="Node.js"  
                     className="techImg"
