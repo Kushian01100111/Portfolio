@@ -5,31 +5,44 @@ import { useRef, useEffect } from "react"
 
 const Hero = () => {
   const targetRef = useRef(null)
-  const {scrollYProgess} = useScroll({
+  const {scrollYProgress} = useScroll({
     target: targetRef,
-    offset: ["end end", "end start"]
+    offset: [ "start start", "end end" ]
   })
 
 
-  useEffect(() => {
-    const element = targetRef.current;
-    console.log(element); // 👈️ element here
-  }, []);
+  // useEffect(() => {
+  //   const element = targetRef.current;
+  //   console.log(element); // 👈️ element here
+  // }, []);
+
+
   const opacity = useTransform(
-    scrollYProgess,
-    [0, 0.5],
-    [1,0]);
+    scrollYProgress,
+    [0, 0.12, 0.15, 0.2, 0.5],  
+    [0, 0, 1, 1, 1]  
+  )
+
+  const scale = useTransform( 
+    scrollYProgress,
+    [0, 0.12, 0.15, 0.2, 0.5],  
+    [1.5, 1.5, 1, 1, 1] 
+  )
+
+console.log(scrollYProgress.get())
 
   return (
-    <m.div className="hero"
-    ref={targetRef}
-    >
-        <div className="contentHero">
-            <h2 className="medium">Building the Future with Passion: </h2>
-            <h3 className="medium">Pedro Comas - Full-Stack Developer</h3>
-        </div>
-      <Button text={"Get in touch"} size={"small"}/>
-    </m.div>
+    <div className="mainHero">
+      <m.div className="hero"
+      ref={targetRef}
+      style={{opacity, scale}}>
+          <div className="contentHero">
+              <h2 className="medium">Building the Future with Passion: </h2>
+              <h3 className="medium">Pedro Comas - Full-Stack Developer</h3>
+          </div>
+        <Button text={"Get in touch"} size={"small"}/>
+      </m.div>
+    </div>
   )
 }
 

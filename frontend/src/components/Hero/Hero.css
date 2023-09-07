@@ -4,11 +4,18 @@
     gap: 5vh;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 140px;
+}
+
+.mainHero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50vh;
     background: radial-gradient(closest-side,#213B36,#242424);
     background-size:100% 100%;
-    position: sticky;
-    top: 120px;
+
 }
 
 
