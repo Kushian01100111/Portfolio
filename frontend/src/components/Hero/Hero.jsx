@@ -5,34 +5,37 @@ import { useRef, useEffect } from "react"
 
 const Hero = () => {
   const targetRef = useRef(null)
+  const container = useRef(null)
   const {scrollYProgress} = useScroll({
     target: targetRef,
-    offset: [ "start start", "end end" ]
+    offset: [ "1 1", "0 1" ]
   })
 
 
-  // useEffect(() => {
-  //   const element = targetRef.current;
-  //   console.log(element); // 👈️ element here
-  // }, []);
+  useEffect(() => {
+    const element = targetRef.current;
+    console.log(element);
+    console.log(container.current) // 👈️ element here
+  }, []);
 
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.12, 0.15, 0.2, 0.5],  
-    [0, 0, 1, 1, 1]  
+    [0, 0.5],  
+    [1, 0]  
   )
 
   const scale = useTransform( 
     scrollYProgress,
-    [0, 0.12, 0.15, 0.2, 0.5],  
-    [1.5, 1.5, 1, 1, 1] 
+    [0, 0.5],  
+    [1, 0.5] 
   )
 
 console.log(scrollYProgress.get())
 
   return (
-    <div className="mainHero">
+    <m.div className="mainHero"
+    >
       <m.div className="hero"
       ref={targetRef}
       style={{opacity, scale}}>
@@ -42,7 +45,7 @@ console.log(scrollYProgress.get())
           </div>
         <Button text={"Get in touch"} size={"small"}/>
       </m.div>
-    </div>
+    </m.div>
   )
 }
 

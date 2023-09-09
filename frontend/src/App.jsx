@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
+import { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
 import MainDescription from './components/MainDescription/MainDescription';
-import './App.css'
+import './App.css';
 
 function App() {
+
   return (
     <div className='App'>
       <Navbar />
-      <div className="content">
-        <Hero />
+      <div 
+      className="content">
+        <Hero/>
         <MainDescription/>
       </div>
     </div>
