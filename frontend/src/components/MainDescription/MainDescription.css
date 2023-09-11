@@ -1,5 +1,6 @@
 
-.description{
+
+.mainDescrition{
     position: sticky;
     top: 120px;
 }
@@ -8,7 +9,6 @@
     cursor: grab;
     float: left;
     z-index: 1;
-
 }
 
 .techImg{
