@@ -1,0 +1,12 @@
+{
+    "title": "Building the Future with Passion:",
+    "sub-title": "Pedro Comas - Full-Stack Developer",
+    "button": "Get in touch",
+    "about": "About me",
+    "description":"Hello, my name is Pedro Comas and I am someone passionate about computing, technology and software development. The beginning of the quarantine marked a change in me personally, from there I decided to deepen my previous knowledge with the aim of being able to give my family a better life.",
+    "projects": {
+      "part1": "Project description",
+      "part2": "Client",
+      "part3": "View Site"
+    }
+  }

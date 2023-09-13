@@ -2,8 +2,10 @@ import "./Hero.css"
 import Button from "../Button"
 import {motion as m, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import { useTranslation } from "react-i18next"
 
 const Hero = () => {
+  const { t } = useTranslation()
   const targetRef = useRef(null)
   const {scrollYProgress} = useScroll({
     target: targetRef,
@@ -25,10 +27,10 @@ const Hero = () => {
       ref={targetRef}
       style={{opacity}}>
           <div className="contentHero">
-              <h2 className="medium">Building the Future with Passion: </h2>
-              <h3 className="medium">Pedro Comas - Full-Stack Developer</h3>
+              <h2 className="medium"> {t("title")}</h2>
+              <h3 className="medium"> {t("sub-title")}</h3>
           </div>
-        <Button text={"Get in touch"} size={"small"}/>
+        <Button text={t("button")} size={"small"}/>
       </m.div>
     </m.div>
   )

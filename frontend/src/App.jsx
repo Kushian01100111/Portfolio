@@ -14,7 +14,12 @@ function App() {
       className="content">
         <Hero/>
         <MainDescription/>
-        <Projects/>
+        <div className='projects'>
+          <Projects />
+          <Projects/>
+          <Projects/>
+          <Projects/>
+        </div>
       </div>
     </div>
   )
