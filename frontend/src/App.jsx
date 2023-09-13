@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import MainDescription from './components/MainDescription/MainDescription';
 import Projects from './components/Projects/Projects';
+import Form from './components/Form/Form';
 import { gif } from './assets/imgs/Gifs';
 import './App.css';
 
@@ -22,15 +23,24 @@ function App() {
             name={t("billy.title")}
             keywords={t("billy.description")}
             technologies={t("billy.tech", { returnObjects: true })}
+            text={t("billy.technology")}
             client={t("billy.client")}
             github={t("billy.github")}
             link={t("billy.site")}
-            side={"left"}
+            side={"right"}
             gif={gif[0]}/>
-          <Projects gif={gif[1]}/>
-          <Projects/>
-          <Projects/>
+          <Projects
+            name={t("frenzy.title")}
+            keywords={t("frenzy.description")}
+            technologies={t("frenzy.tech", { returnObjects: true })}
+            text={t("frenzy.technology")}
+            client={t("frenzy.client")}
+            github={t("frenzy.github")}
+            link={t("frenzy.site")}
+            side={"left"}
+            gif={gif[1]}/>
         </div>
+        <Form/>
       </div>
     </div>
   )

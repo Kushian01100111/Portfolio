@@ -1,7 +1,55 @@
+
+@media (min-width: 1200px) {
+    .projectGithub{
+        width: 5rem;
+        height: auto;
+    }
+
+
+    .project.right{
+        display: grid;
+        grid-template-columns:0.5fr auto ;
+        grid-template-rows: auto;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0px;
+        margin: 0 auto;
+    }
+
+    .project.left{
+        display: grid;
+        grid-template-columns: auto 0.5fr;
+        grid-template-rows: auto;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0px;
+        margin: 0 auto;
+    }
+    .projectContent.right{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .gifContainer.right{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .projectContent.left{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .gifContainer.left{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+
+
+}
 .project{
+    padding: 5vh 0;
     min-height: 50vh;
 }
 
+.projectTitle{
+    font-weight: 700;
+}
 
 .gifContainer{
     max-width: 100%;
@@ -10,4 +58,120 @@
 .gif{
     width: 100%;
     height: auto;
+}
+
+
+.leftt{
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.rightt{
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: right;
+}
+
+.projectsLinksright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.projectsLinksleft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.listright{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.listleft{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.listleft li{
+    margin-left: 1rem;
+}
+
+.listleft li::before, .listright li::before{
+    content: "";
+    margin-right: 1rem;
+}
+
+.listleft li::marker, .listright li::marker{
+    content: "•"; /* FontAwesome Unicode */
+}
+
+.projectLinkSite{
+    color: #3FA92D;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.projectLinkSite:hover{
+    font-weight: 700;
+}
+
+.projectLinkSite:after{
+    content: "";
+    position: absolute;
+    background-color: #3FA92D;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.projectLinkSite:hover:after{
+    width: 100%;
+}
+
+@media (max-width: 1090px) {
+    .projectGithub{
+        width: 4rem;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    .projectGithub{
+        width: 3rem;
+        height: auto;
+    }
 }

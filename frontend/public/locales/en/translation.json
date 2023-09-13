@@ -12,9 +12,19 @@
     "billy": {
       "title": "Billy Coleman Porfolio",
       "description": "A Showcase of the work produced by the professional photographer Billy Coleman, one of my first clients while working as a freelance.",
+      "technology": "Technologies",
       "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
       "client":"Billy Coleman",
       "github": "https://github.com/Kushian01100111/Billy-Coleman",
       "site": "https://astonishing-kitsune-0d0656.netlify.app/"
+    },
+    "frenzy": {
+      "title": "Frenzy Media",
+      "description": "The website of the Digital agency Frenzy Media, the agency centers itself on creating personalized advertisements and content for its clients to amplify their reach and revenue online.",
+      "technology": "Technologies",
+      "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+      "client":"Carolina Albarracin",
+      "github": "https://github.com/Kushian01100111/Frenzy-digital-agency",
+      "site": "https://majestic-kashata-089e8f.netlify.app/"
     }
   }
