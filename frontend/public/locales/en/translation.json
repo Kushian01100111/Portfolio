@@ -8,5 +8,13 @@
       "part1": "Project description",
       "part2": "Client",
       "part3": "View Site"
+    },
+    "billy": {
+      "title": "Billy Coleman Porfolio",
+      "description": "A Showcase of the work produced by the professional photographer Billy Coleman, one of my first clients while working as a freelance.",
+      "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+      "client":"Billy Coleman",
+      "github": "https://github.com/Kushian01100111/Billy-Coleman",
+      "site": "https://astonishing-kitsune-0d0656.netlify.app/"
     }
   }

@@ -1,3 +1,13 @@
 .project{
-    height: 100vh;
+    min-height: 50vh;
+}
+
+
+.gifContainer{
+    max-width: 100%;
+}
+
+.gif{
+    width: 100%;
+    height: auto;
 }
