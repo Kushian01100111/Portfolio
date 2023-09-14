@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Images from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
@@ -10,15 +11,20 @@ import './App.css';
 
 function App() {
   const { t } = useTranslation()
-
+  const date = (new Date).getFullYear()
+  function scrollToTarget(target) {
+    const targetSection = document.getElementById(`${target}`);
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar scroll={scrollToTarget}/>
       <div 
       className="content">
         <Hero/>
         <MainDescription/>
-        <div className='projects'>
+        <div id='projects'>
+          <div><h2 className='big bold'>{t("projects.title")}</h2></div>
           <Projects
             name={t("billy.title")}
             keywords={t("billy.description")}
@@ -40,7 +46,25 @@ function App() {
             side={"left"}
             gif={gif[1]}/>
         </div>
-        <Form/>
+        <div id='getInTouch'>
+          <Form/>
+        </div>
+        <div id="socials">
+          <ul className='socialLogs'>
+            {
+                Images.map((n,i)=>{
+                 return <li className='logos' key={i}><a 
+                  href={n[1]}
+                  target="_blank" 
+                  rel="noreferrer"><img src={n[0]} alt="Logo" /></a></li>
+                })
+              }
+          </ul>
+        </div>
+        <div>
+          <small className='small'
+          style={{display: "flex", alignItems: "flex-start"}}>{date}&copy; All Rights Reserved, Pedro Comas</small>
+        </div>
       </div>
     </div>
   )

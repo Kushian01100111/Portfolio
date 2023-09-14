@@ -1,5 +1,5 @@
 .content {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -26,6 +26,26 @@
 
 .contentSize{
   width: min-content;
+}
+
+
+.logos{
+    width: 8rem;
+    height: auto;
+}
+
+.logos img{
+  width: 100%;
+  height: auto;
+}
+
+.socialLogs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 8rem 0;
+  gap: 2rem;
 }
 
 @media (max-width: 1090px) {
@@ -60,6 +80,15 @@
 
 
 @media (max-width: 500px) {
+  .logos{
+    width: 5rem;
+    height: auto;
+}
+
+  #projects{
+    padding-top: 8rem;
+  }
+
   .small{
     font-size: 1.4rem;
   }

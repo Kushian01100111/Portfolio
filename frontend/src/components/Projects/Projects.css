@@ -20,7 +20,7 @@
         grid-template-columns: auto 0.5fr;
         grid-template-rows: auto;
         grid-column-gap: 1.5rem;
-        grid-row-gap: 0px;
+        grid-row-gap: 0px;  
         margin: 0 auto;
     }
     .projectContent.right{

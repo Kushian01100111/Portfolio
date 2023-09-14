@@ -5,6 +5,7 @@
     "about": "Te hablo sobre mi",
     "description":"Hola, mi nombre es Pedro Comas y soy alguien apasionado por la computación, la tecnología y el desarrollo de software. El comienzo de la cuarentena marco un cambio en mi en persona, desde ahí decidí profundizar mis previos conocimientos con el objetivo de poder dar a mi familia una vida mejor.",
     "projects": {
+      "title": "Proyectos",
       "part1": "Descripción del proyecto",
       "part2": "Cliente",
       "part3": "Ver el sitio"
@@ -26,5 +27,10 @@
       "client":"Carolina Albarracin",
       "github": "https://github.com/Kushian01100111/Frenzy-digital-agency",
       "site": "https://majestic-kashata-089e8f.netlify.app/"
+    },
+    "form": {
+      "title": "Si quieres ponerte en contacto!",
+      "name": "Tu nombre?",
+      "message": "Mensaje"
     }
   }

@@ -5,6 +5,7 @@
     "about": "About me",
     "description":"Hello, my name is Pedro Comas and I am someone passionate about computing, technology and software development. The beginning of the quarantine marked a change in me personally, from there I decided to deepen my previous knowledge with the aim of being able to give my family a better life.",
     "projects": {
+      "title": "Projects",
       "part1": "Project description",
       "part2": "Client",
       "part3": "View Site"
@@ -26,5 +27,10 @@
       "client":"Carolina Albarracin",
       "github": "https://github.com/Kushian01100111/Frenzy-digital-agency",
       "site": "https://majestic-kashata-089e8f.netlify.app/"
+    },
+    "form": {
+      "title": "If you want to get in touch!",
+      "name": "Your name?",
+      "message": "Message"
     }
   }

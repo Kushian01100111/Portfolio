@@ -1,9 +1,10 @@
 import "./Navbar.css"
 import { useState, useEffect } from "react"
+import {Link} from "react-router-dom";
 import {motion as m} from "framer-motion"
 import Logos from "./../../assets/imgs/Logos"
 
-const Navbar = () => {
+const Navbar = ({scroll}) => {
     const [active, setActive] = useState(false)
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
@@ -74,8 +75,14 @@ const Navbar = () => {
                 initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}}
                 transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
                     <ul className="linksSmaller">
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#projects" onClick={() => {
+                                scroll("projects")
+                                setActive(!active)
+                        }}>Projects</a></li>
+                        <li><a href="#contact"
+                        onClick={() => {
+                                scroll("getInTouch")
+                                setActive(!active)}}>Contact</a></li>
                         <div className="socialsLinks">
                             <li><a href="#"><img src={Logos[1]} alt="LinkedIn"  className="linkLogo"/></a></li>
                             <li><a href="#"><img src={Logos[2]} alt="Gmail"  className="linkLogo"/></a></li>

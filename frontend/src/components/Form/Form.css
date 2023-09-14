@@ -1,0 +1,80 @@
+#contac{
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    text-align: left;
+}
+
+input#name, input#email, textarea{
+    width: 100%;
+    margin: 2rem 0;
+    font-family: inherit;
+    padding: 0.5rem;
+    background-color:#D9D9D9 ;
+    color: #242424;
+    border: none;
+}
+
+textarea{
+    resize: none;
+    height: 24rem;
+}
+
+
+.big.title{
+    margin-bottom: 4rem;
+}
+
+#submit{
+    margin-top: 3.5rem;
+}
+
+.error{
+    color: red;
+  }
+
+.loader{
+    display: flex;
+    margin-top: 3.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    width: 4.0rem;
+    height: 4.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 4.0rem;
+    height: 4.0rem;
+    border: 8px solid;
+    border-color: #242424 #f3f3f3 #242424 #f3f3f3;
+    border-radius: 100%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 750px) {
+    input#name, input#email, textarea{
+        margin: 1rem 0;
+    }
+
+    textarea{
+        height: 15rem;
+    }
+}

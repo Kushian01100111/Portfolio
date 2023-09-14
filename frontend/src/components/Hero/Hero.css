@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     background: radial-gradient(closest-side,#213B36,#242424);
     background-size:100% 100%;
   
@@ -22,4 +22,11 @@
 
 .contentHero h2{
     font-weight: 900;
+}
+
+@media (max-width: 500px) {
+
+    .mainHero{
+        height: 50vh;
+    }
 }

@@ -30,7 +30,7 @@ const Hero = () => {
               <h2 className="medium"> {t("title")}</h2>
               <h3 className="medium"> {t("sub-title")}</h3>
           </div>
-        <Button text={t("button")} size={"small"}/>
+        <Button text={t("button")} size={"small"} action={"getInTouch"}/>
       </m.div>
     </m.div>
   )
