@@ -33,7 +33,7 @@ const Form = () => {
       console.log(values)
         const response = await fetch("/api/form", {
           method: "POST",
-          headers:{
+          headers:{ 
             'Content-type': 'application/json',
           },
           body: JSON.stringify(values),
