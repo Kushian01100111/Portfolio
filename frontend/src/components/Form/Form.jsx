@@ -31,7 +31,7 @@ const Form = () => {
     onSubmit: async (values, {resetForm})=>{
       setWaitingForm(true)
       console.log(values)
-        const response = await fetch("/api/form", {
+        const response = await fetch("/api/email/send", {
           method: "POST",
           headers:{ 
             'Content-type': 'application/json',

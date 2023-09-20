@@ -1,10 +1,11 @@
 import "./Navbar.css"
 import { useState, useEffect } from "react"
-import {Link} from "react-router-dom";
 import {motion as m} from "framer-motion"
 import Logos from "./../../assets/imgs/Logos"
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({scroll}) => {
+    const { t } = useTranslation( )
     const [active, setActive] = useState(false)
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
@@ -21,7 +22,7 @@ const Navbar = ({scroll}) => {
     {width <= 900 ? (
         <header className="header">
             <div className="navbar">
-                <div className="title">
+                <div className="title ot" onClick={()=> {scroll("root")}}>
                     <h1 className="big">PC</h1>
                 </div>
                 <div>
@@ -78,11 +79,11 @@ const Navbar = ({scroll}) => {
                         <li><a href="#projects" onClick={() => {
                                 scroll("projects")
                                 setActive(!active)
-                        }}>Projects</a></li>
+                        }}>{t("navbar.projects")}</a></li>
                         <li><a href="#contact"
                         onClick={() => {
                                 scroll("getInTouch")
-                                setActive(!active)}}>Contact</a></li>
+                                setActive(!active)}}>{t("navbar.contact")}</a></li>
                         <div className="socialsLinks">
                             <li><a href="#"><img src={Logos[1]} alt="LinkedIn"  className="linkLogo"/></a></li>
                             <li><a href="#"><img src={Logos[2]} alt="Gmail"  className="linkLogo"/></a></li>
@@ -93,15 +94,15 @@ const Navbar = ({scroll}) => {
     ) : (
         <header className="header">
             <div className="navbar">
-                <div className="title">
+                <div className="title ot" onClick={()=> {scroll("root")}}>
                     <h1 className="big">PC</h1>
                 </div>
                 <div>
                 <ul className="linksSmaller">
                         <li><a href="#projects" onClick={() => scroll("projects")}
-                        >Projects</a></li>
+                        >{t("navbar.projects")}</a></li>
                         <li><a href="#contact"
-                        onClick={() => scroll("getInTouch")}>Contact</a></li>
+                        onClick={() => scroll("getInTouch")}>{t("navbar.contact")}</a></li>
                         <li><a href="#"><img src={Logos[1]} alt="LinkedIn"  className="linkLogo"/></a></li>
                         <li><a href="#"><img src={Logos[2]} alt="Gmail"  className="linkLogo"/></a></li>
                     </ul>

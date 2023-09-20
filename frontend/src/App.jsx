@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Images from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar/Navbar';

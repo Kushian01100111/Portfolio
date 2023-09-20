@@ -5,6 +5,11 @@
     right: 1.5rem;
 }
 
+.language ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
 .languageButton{
     width: 4rem;
@@ -15,4 +20,16 @@
 .flag{
     width: 100%;
     height: auto;
+}
+
+
+@media (max-width: 500px) {
+    .language{
+        bottom: 5rem;
+    }
+    .languageButton{
+        width: 2rem;
+        height: auto;
+        padding: 0.2rem;
+    }
 }

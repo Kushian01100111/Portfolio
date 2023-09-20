@@ -1,5 +1,7 @@
 
-
+.ot{
+    cursor: pointer;
+}
 .linkLogo{
     width: 8.0rem;
     height: auto;
