@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero';
 import MainDescription from './components/MainDescription/MainDescription';
 import Projects from './components/Projects/Projects';
 import Form from './components/Form/Form';
+import ChangeLanguage from './components/ChangeLanguage/ChangeLanguage.jsx';
 import { gif } from './assets/imgs/Gifs';
 import './App.css';
 
@@ -65,6 +66,7 @@ function App() {
           <small className='small'
           style={{display: "flex", alignItems: "flex-start"}}>{date}&copy; All Rights Reserved, Pedro Comas</small>
         </div>
+        <ChangeLanguage/>
       </div>
     </div>
   )

@@ -91,8 +91,22 @@ const Navbar = ({scroll}) => {
             </m.div>
         </header>
     ) : (
-        <header>
-
+        <header className="header">
+            <div className="navbar">
+                <div className="title">
+                    <h1 className="big">PC</h1>
+                </div>
+                <div>
+                <ul className="linksSmaller">
+                        <li><a href="#projects" onClick={() => scroll("projects")}
+                        >Projects</a></li>
+                        <li><a href="#contact"
+                        onClick={() => scroll("getInTouch")}>Contact</a></li>
+                        <li><a href="#"><img src={Logos[1]} alt="LinkedIn"  className="linkLogo"/></a></li>
+                        <li><a href="#"><img src={Logos[2]} alt="Gmail"  className="linkLogo"/></a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
     )}
     </>

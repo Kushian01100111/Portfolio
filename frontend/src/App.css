@@ -48,6 +48,11 @@
   gap: 2rem;
 }
 
+
+#projects, #getInTouch{
+  padding-top: 12rem;
+}
+
 @media (max-width: 1090px) {
   .small{
     font-size: 1.8rem;
@@ -85,8 +90,8 @@
     height: auto;
 }
 
-  #projects{
-    padding-top: 8rem;
+#projects, #getInTouch{
+    padding-top: 10rem;
   }
 
   .small{
