@@ -1,11 +1,23 @@
 import "./Projects.css"
+import {motion as m } from "framer-motion";
 import { useTranslation } from "react-i18next"
 import Logos from "./../../assets/imgs/Logos"
 
 const Projects = ({name, keywords, technologies, text, client, github, link, gif, side}) => {
+  const firstAnimation = {
+    initial: {opacity: 0, scale: 0.8, x:20 },
+    whileInView :{ opacity: 1, scale: 1, x:0,  transition: {
+      type: "tween",
+      duration: 1
+    }}
+  }
   const { t } = useTranslation()
   return (
-    <div className={`project ${side}`}>
+    <m.div
+    variants={firstAnimation}
+                  initial="initial"
+                  whileInView="whileInView"
+    className={`project ${side}`}>
       <div className={`projectContent ${side}`}>
         <div className={ side === "right" ? "rightt": 
                           side === "left" ? "leftt"
@@ -38,7 +50,7 @@ const Projects = ({name, keywords, technologies, text, client, github, link, gif
       <div className={`gifContainer ${side}`}>
         <img src={gif} alt="Gif pagina" className="gif"/>
       </div>
-    </div>
+    </m.div>
   )
 }
 
