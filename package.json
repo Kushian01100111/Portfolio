@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-pedro-comas-nest",
+  "version": "1.0.0",
+  "description": "Portafolio",
+  "main": "index.js",
+  "dependencies": {
+    "turbo-windows-64": "^1.10.14",
+    "turbo": "^1.10.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "build" : "turbo run build",
+    "start": "node backend/dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kushian01100111/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces":[
+    "/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kushian01100111/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Kushian01100111/Portfolio#readme"
+}
