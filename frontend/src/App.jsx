@@ -6,7 +6,6 @@ import MainDescription from './components/MainDescription/MainDescription';
 import Projects from './components/Projects/Projects';
 import Form from './components/Form/Form';
 import ChangeLanguage from './components/ChangeLanguage/ChangeLanguage.jsx';
-import { gif } from './assets/imgs/Gifs';
 import './App.css';
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
             github={t("billy.github")}
             link={t("billy.site")}
             side={"right"}
-            gif={gif[0]}/>
+            gif={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1695389750/Rapid/Billy_Coleman_yprtrr.gif"}/>
           <Projects
             name={t("frenzy.title")}
             keywords={t("frenzy.description")}
@@ -44,7 +43,7 @@ function App() {
             github={t("frenzy.github")}
             link={t("frenzy.site")}
             side={"left"}
-            gif={gif[1]}/>
+            gif={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1695389875/Rapid/Frenzy_wbgs7c.gif"}/>
         </div>
         <div id='getInTouch'>
           <Form/>
