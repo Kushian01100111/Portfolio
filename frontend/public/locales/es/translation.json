@@ -18,7 +18,7 @@
       "title": "Billy Coleman Porfolio",
       "description": "Una muestra del trabajo realizado por el fotógrafo profesional Billy Coleman, uno de mis primeros clientes mientras trabajaba como freelance.",
       "technology": "Tecnologias",
-      "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+      "tech": ["React.js", "Framer Motion", "Python", "Flask"],
       "client":"Billy Coleman",
       "github": "https://github.com/Kushian01100111/Billy-Coleman",
       "site": "https://www.billycoleman.com/"
