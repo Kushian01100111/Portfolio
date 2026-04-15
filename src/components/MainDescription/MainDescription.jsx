@@ -25,69 +25,9 @@ const MainDescription = () => {
         <m.div className="mainDescrition"
             ref={targetRef}
             style={{opacity}}>
-            <div>
-                <div className="tech react">
-                    <m.img 
-                    src={Logos[6]} 
-                    alt="React.js"  
-                    className="techImg"
-                    drag
-                    dragConstraints={{
-                        top: -20,
-                        left: -20,
-                        right: 20,
-                        bottom: 20,
-                    }}
-                    />
-                </div>
-                <div className="tech python">
-                    <m.img 
-                    src={Logos[5]} 
-                    alt="Python"  
-                    className="techImg"
-                    drag
-                    dragConstraints={{
-                        top: -20,
-                        left: -20,
-                        right: 20,
-                        bottom: 20,
-                    }}
-                    />
-                </div>
-                <div className="tech javascript">
-                    <m.img 
-                    src={Logos[7]} 
-                    alt="JavaScript"  
-                    className="techImg"
-                    drag
-                    dragConstraints={{
-                        top: -20,
-                        left: -20,
-                        right: 20,
-                        bottom: 20,
-                    }}
-                    />
-                </div>
-                <div className="tech node">
-                    <m.img src={Logos[8]} 
-                    alt="Node.js"  
-                    className="techImg"
-                    drag
-                    dragConstraints={{
-                        top: -20,
-                        left: -20,
-                        right: 20,
-                        bottom: 20,
-                    }}
-                    />
-                </div>
-            </div>
             <div className="contentDescription">
                 <div className="tittle"><h1 className="big">
                 {t("about")}</h1></div>
-                <div className="containerPortrait">
-                    <img src={Portrait} alt="Portrait" className="portrait"/>
-                </div>
                 <div>
                     <p className="small">{t("description")}</p>
                 </div>

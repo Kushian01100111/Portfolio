@@ -27,10 +27,9 @@ const Hero = () => {
       ref={targetRef}
       style={{opacity}}>
           <div className="contentHero">
-              <h2 className="medium"> {t("title")}</h2>
-              <h3 className="medium"> {t("sub-title")}</h3>
+              <h2 className="big"> {t("title")}</h2>
+              <h3 className="small"> {t("sub-title")}</h3>
           </div>
-        <Button text={t("button")} size={"small"} action={"getInTouch"}/>
       </m.div>
     </m.div>
   )

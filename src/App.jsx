@@ -17,9 +17,7 @@ function App() {
   }
   return (
     <div className='App'>
-      <Navbar scroll={scrollToTarget}/>
-      <div 
-      className="content">
+      <div className="content">
         <Hero/>
         <MainDescription/>
         <div id='projects'>
