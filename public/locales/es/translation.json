@@ -20,7 +20,6 @@
       "technology": "Tecnologias",
       "tech": ["React.js", "Framer Motion", "Python", "Flask"],
       "client":"Billy Coleman",
-      "github": "https://github.com/Kushian01100111/Billy-Coleman",
       "site": "https://www.billycoleman.com/"
     },
     "frenzy": {
@@ -29,7 +28,6 @@
       "technology": "Tecnologias",
       "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
       "client":"Carolina Albarracin",
-      "github": "https://github.com/Kushian01100111/Frenzy-digital-agency",
       "site": "https://frenzymedia.net/"
     },
     "form": {

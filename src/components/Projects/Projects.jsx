@@ -33,11 +33,6 @@ const Projects = ({name, keywords, technologies, text, client, github, link, gif
             </ul>
             { client ? <span className="small bold">{t("projects.part2")}: {client}</span>: ""}
             <div className={`projectsLinks${side}`}>
-              <a href={github} 
-              target="_blank" 
-              rel="noreferrer">
-                <img src={Logos[0]} alt="github" className="projectGithub" />
-              </a>
               <a href={link} 
               className="small projectLinkSite"
               target="_blank" 

@@ -7,24 +7,9 @@ import Portrait from "./../../assets/imgs/Rectangle 4.png"
 
 const MainDescription = () => {
     const {t} = useTranslation()
-    const targetRef = useRef(null)
-    const {scrollYProgress} = useScroll({
-    target: targetRef,
-    offset: [ "start start", "end start" ]
-  })
-
-
-  const opacity = useTransform(
-    scrollYProgress,
-    [0,0.8],  
-    [1,0]  
-  )
-
   return (
     <div className="description">
-        <m.div className="mainDescrition"
-            ref={targetRef}
-            style={{opacity}}>
+        <m.div className="mainDescrition">
             <div className="contentDescription">
                 <div className="tittle"><h1 className="big">
                 {t("about")}</h1></div>

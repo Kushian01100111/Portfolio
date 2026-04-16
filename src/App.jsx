@@ -17,8 +17,10 @@ function App() {
   }
   return (
     <div className='App'>
+      <div className='sideScroll'>
+                <Hero/>
+      </div>
       <div className="content">
-        <Hero/>
         <MainDescription/>
         <div id='projects'>
           <div><h2 className='big bold'>{t("projects.title")}</h2></div>

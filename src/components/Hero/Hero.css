@@ -5,23 +5,14 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 140px;
+    top: 50vh;
 }
 
 .mainHero{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 100vh;
-    background: radial-gradient(closest-side,#213B36,#242424);
-    background-size:100% 100%;
-  
-}
-
-
-
-.contentHero h2{
-    font-weight: 900;
+    height: 100%;
 }
 
 @media (max-width: 500px) {
