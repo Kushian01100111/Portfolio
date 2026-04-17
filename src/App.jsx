@@ -23,10 +23,10 @@ function App() {
       <div className="content">
         <MainDescription/>
         <div id='projects'>
-          <div><h2 className='big bold'>{t("projects.title")}</h2></div>
+          <div><h2 className='big'>{t("projects.title")}</h2></div>
           <Projects
             name={t("billy.title")}
-            keywords={t("billy.description")}
+            description={t("billy.description")}
             technologies={t("billy.tech", { returnObjects: true })}
             text={t("billy.technology")}
             client={t("billy.client")}
@@ -36,7 +36,7 @@ function App() {
             gif={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1695389750/Rapid/Billy_Coleman_yprtrr.gif"}/>
           <Projects
             name={t("frenzy.title")}
-            keywords={t("frenzy.description")}
+            description={t("frenzy.description")}
             technologies={t("frenzy.tech", { returnObjects: true })}
             text={t("frenzy.technology")}
             client={t("frenzy.client")}

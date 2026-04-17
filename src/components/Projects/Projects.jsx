@@ -3,7 +3,7 @@ import {motion as m } from "framer-motion";
 import { useTranslation } from "react-i18next"
 import Logos from "./../../assets/imgs/Logos"
 
-const Projects = ({name, keywords, technologies, text, client, github, link, gif, side}) => {
+const Projects = ({name, description, technologies, text, client, github, link, gif, side}) => {
   const firstAnimation = {
     initial: {opacity: 0, scale: 0.8, x:20 },
     whileInView :{ opacity: 1, scale: 1, x:0,  transition: {
@@ -24,14 +24,15 @@ const Projects = ({name, keywords, technologies, text, client, github, link, gif
                         :   ""
                         }>
             <h3 className="medium projectTitle">{name}</h3>
-            <p className="small"><span className="bold">{t("projects.part1")}</span>: {keywords}</p>
+            <p className="small">
+                {description}
+            </p>
             <ul className={`list${side}`}>
               <span className="bold small">{text}</span>
               { technologies?.map((n,i)=>{
                 return <li key={i} className={`small`}>{n}</li>
               })}
             </ul>
-            { client ? <span className="small bold">{t("projects.part2")}: {client}</span>: ""}
             <div className={`projectsLinks${side}`}>
               <a href={link} 
               className="small projectLinkSite"

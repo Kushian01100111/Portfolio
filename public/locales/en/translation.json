@@ -1,38 +1,40 @@
 {
-    "title": "Pedro Comas",
-      "sub-title": "Fullstack developer",
-    "button": "Get in touch",
-    "about": "About me",
-    "description":"Hello, my name is Pedro Comas and I am someone passionate about computing, technology and software development. The beginning of the quarantine marked a change in me personally, from there I decided to deepen my previous knowledge with the aim of being able to give my family a better life.",
-    "navbar": {
-      "projects": "Projects",
-      "contact": "Contact"
-    },
-    "projects": {
-      "title": "Projects",
-      "part1": "Project description",
-      "part2": "Client",
-      "part3": "View Site"
-    },
-    "billy": {
-      "title": "Billy Coleman Porfolio",
-      "description": "A Showcase of the work produced by the professional photographer Billy Coleman, one of my first clients while working as a freelance.",
-      "technology": "Technologies",
-      "tech": ["React.js", "Framer Motion", "Python", "Flask"],
-      "client":"Billy Coleman",
-      "site": "https://www.billycoleman.com/"
-    },
-    "frenzy": {
-      "title": "Frenzy Media",
-      "description": "The website of the Digital agency Frenzy Media, the agency centers itself on creating personalized advertisements and content for its clients to amplify their reach and revenue online.",
-      "technology": "Technologies",
-      "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
-      "client":"Carolina Albarracin",
-      "site": "https://frenzymedia.net/"
-    },
-    "form": {
-      "title": "If you want to get in touch!",
-      "name": "Your name?",
-      "message": "Message"
-    }
+  "title": "Pedro Comas",
+  "sub-title": "Full-Stack Developer",
+  "button": "Get in Touch",
+  "about": "About Me",
+  "description": {
+    "part1" : "I'm Pedro Comas, a Computer Science student and full-stack developer with a strong interest in building software that is both practical and well designed. Over the past few years, I've worked on freelance, academic, and personal projects that gave me hands-on experience with React, Go, APIs, and databases.",
+    "part2" : "I like working across the full stack, but I'm especially interested in backend and systems-oriented challenges, where performance, correctness, and thoughtful design make a real difference.",
+    "part3" : "I'm currently focused on growing through projects that strengthen my foundations in scalable software, concurrency, and reliable system design, with the intention of continuing along that path during my degree through elective courses and, eventually, my thesis." 
+  },
+  "navbar": {
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Client Projects",
+    "part1": "Description",
+    "part2": "Client",
+    "part3": "View Site"
+  },
+  "billy": {
+    "title": "Billy Coleman Portfolio",
+    "description": "A portfolio site created for Billy Coleman to showcase his photography with a stronger visual identity and a smoother browsing experience.",
+    "technology": "Technologies",
+    "tech": ["React.js", "Framer Motion", "Python", "Flask"],
+    "site": "https://www.billycoleman.com/"
+  },
+  "frenzy": {
+    "title": "Frenzy Media",
+    "description": "A website built for Frenzy Media to give the agency a clearer online presence and a more direct way to present its services.",
+    "technology": "Technologies",
+    "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+    "site": "https://frenzymedia.net/"
+  },
+  "form": {
+    "title": "Get in Touch",
+    "name": "Your Name",
+    "message": "Message"
   }
+}

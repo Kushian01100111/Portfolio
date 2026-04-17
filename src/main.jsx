@@ -2,6 +2,7 @@ import React,{Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './i18n.js'
+import './fonts.css'
 import './Reset.css'
 import './index.css'
 

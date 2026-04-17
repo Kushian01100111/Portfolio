@@ -8,13 +8,15 @@ import Portrait from "./../../assets/imgs/Rectangle 4.png"
 const MainDescription = () => {
     const {t} = useTranslation()
   return (
-    <div className="description">
+    <div>
         <m.div className="mainDescrition">
             <div className="contentDescription">
-                <div className="tittle"><h1 className="big">
+                <div className="title"><h1 className="big">
                 {t("about")}</h1></div>
-                <div>
-                    <p className="small">{t("description")}</p>
+                <div className="description">
+                    <p className="small">{t("description.part1")}</p>
+                    <p className="small">{t("description.part2")}</p>
+                    <p className="small">{t("description.part3")}</p>
                 </div>
             </div>
         </m.div>
