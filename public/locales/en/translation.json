@@ -8,10 +8,6 @@
     "part2" : "I like working across the full stack, but I'm especially interested in backend and systems-oriented challenges, where performance, correctness, and thoughtful design make a real difference.",
     "part3" : "I'm currently focused on growing through projects that strengthen my foundations in scalable software, concurrency, and reliable system design, with the intention of continuing along that path during my degree through elective courses and, eventually, my thesis." 
   },
-  "navbar": {
-    "projects": "Projects",
-    "contact": "Contact"
-  },
   "projects": {
     "title": "Client Projects",
     "part1": "Description",

@@ -27,8 +27,8 @@ const Hero = () => {
       ref={targetRef}
       style={{opacity}}>
           <div className="contentHero">
-              <h2 className="big gameFont"> {t("title")}</h2>
-              <h3 className="small"> {t("sub-title")}</h3>
+              <h2 className="bigger gameFont"> {t("title")}</h2>
+              <h3 className="small lighter"> {t("sub-title")}</h3>
           </div>
       </m.div>
     </m.div>

@@ -37,10 +37,18 @@
     font-family: 'Bitcount Grid Double' ,'Satoshi', Courier, monospace;
 }
 
+.bigger{
+    font-size: 6rem;
+    font-family: 'Bitcount Grid Double' ,'Satoshi', Courier, monospace;
+}
+
 .bold{
   font-weight: 700;
 }
 
+.lighter{
+  color: rgb(217 215 215 / 87%);
+}
 
 .contentSize{
   width: min-content;

@@ -1,10 +1,9 @@
 import Images from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
-import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import MainDescription from './components/MainDescription/MainDescription';
 import Projects from './components/Projects/Projects';
-import Form from './components/Form/Form';
+import Form from './components/Form/RefactorForm.jsx';
 import ChangeLanguage from './components/ChangeLanguage/ChangeLanguage.jsx';
 import './App.css';
 
