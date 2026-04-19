@@ -1,22 +1,61 @@
+.navList {
+  margin-top: 4rem;
+  width: max-content;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  text-decoration: none;
+}
+
+.navIndicator {
+  margin-right: 1rem;
+  height: 1px;
+  width: 2rem;
+  background: #475569;
+  transition: all 0.15s ease;
+}
+
+.navText {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  transition: color 0.15s ease;
+}
+
+.navLink:hover .navIndicator,
+.navLink:focus-visible .navIndicator {
+  width: 4rem;
+  background: #e2e8f0;
+}
+
+.navLink:hover .navText,
+.navLink:focus-visible .navText {
+  color: #e2e8f0;
+}
+
+
 .hero{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 50vh;
+    justify-content: space-between;
+    padding: 8rem 4rem;
+    height: 100%;
+    max-height: 100vh;
 }
 
 .mainHero{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     height: 100%;
 }
 
 @media (max-width: 500px) {
-
     .mainHero{
         height: 50vh;
     }

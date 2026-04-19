@@ -1,4 +1,4 @@
-import Images from './assets/imgs/Logos copy.js';
+import socialLinks from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
 import Hero from './components/Hero/Hero';
 import MainDescription from './components/MainDescription/MainDescription';
@@ -46,18 +46,6 @@ function App() {
         </div>
         <div id='getInTouch'>
           <Form/>
-        </div>
-        <div id="socials">
-          <ul className='socialLogs'>
-            {
-                Images.map((n,i)=>{
-                 return <li className='logos' key={i}><a 
-                  href={n[1]}
-                  target="_blank" 
-                  rel="noreferrer"><img src={n[0]} alt="Logo" /></a></li>
-                })
-              }
-          </ul>
         </div>
         <div>
           <small className='small'

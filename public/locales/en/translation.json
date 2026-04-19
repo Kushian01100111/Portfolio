@@ -1,8 +1,11 @@
 {
   "title": "Pedro Comas",
   "sub-title": "Full-Stack Developer",
-  "button": "Get in Touch",
-  "about": "About Me",
+  "nav": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact" : "Contact"
+  },
   "description": {
     "part1" : "I'm Pedro Comas, a Computer Science student and full-stack developer with a strong interest in building software that is both practical and well designed. Over the past few years, I've worked on freelance, academic, and personal projects that gave me hands-on experience with React, Go, APIs, and databases.",
     "part2" : "I like working across the full stack, but I'm especially interested in backend and systems-oriented challenges, where performance, correctness, and thoughtful design make a real difference.",
@@ -32,5 +35,6 @@
     "title": "Get in Touch",
     "name": "Your Name",
     "message": "Message"
-  }
+  },
+  "button": "Get in Touch"
 }

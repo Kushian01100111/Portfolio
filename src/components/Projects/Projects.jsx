@@ -4,20 +4,12 @@ import { useTranslation } from "react-i18next"
 import Logos from "./../../assets/imgs/Logos"
 
 const Projects = ({name, description, technologies, text, client, github, link, gif, side}) => {
-  const firstAnimation = {
-    initial: {opacity: 0, scale: 0.8, x:20 },
-    whileInView :{ opacity: 1, scale: 1, x:0,  transition: {
-      type: "tween",
-      duration: 1
-    }}
-  }
   const { t } = useTranslation()
   return (
     <m.div
-    variants={firstAnimation}
-                  initial="initial"
-                  whileInView="whileInView"
-    className={`project ${side}`}>
+      initial="initial"
+      whileInView="whileInView"
+      className={`project ${side}`}>
       <div className={`projectContent ${side}`}>
         <div className={ side === "right" ? "rightt": 
                           side === "left" ? "leftt"

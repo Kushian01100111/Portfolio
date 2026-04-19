@@ -49,3 +49,46 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bitcount Grid Double';
+  src: url('./assets/fonts/bitcount/BitcountGridDouble-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Bitcount Grid Double';
+  src: url('./assets/fonts/bitcount/BitcountGridDouble-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitcount Grid Double';
+  src: url('./assets/fonts/bitcount/BitcountGridDouble-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitcount Grid Double';
+  src: url('./assets/fonts/bitcount/BitcountGridDouble-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitcount Grid Double';
+  src: url('./assets/fonts/bitcount/BitcountGridDouble-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
