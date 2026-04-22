@@ -18,10 +18,6 @@
   width: 40%;
 }
 
-.gameFont {
-    font-family: 'Bitcount Grid Double' ,'Satoshi', Courier, monospace;
-}
-
 
 .smaller{
   font-size: 1.2rem;
@@ -38,12 +34,11 @@
 
 .big{
   font-size: 3rem;
-    font-family: 'Bitcount Grid Double' ,'Satoshi', Courier, monospace;
 }
 
 .bigger{
     font-size: 6rem;
-    font-family: 'Bitcount Grid Double' ,'Satoshi', Courier, monospace;
+    padding-bottom: 1rem;
 }
 
 .bold{

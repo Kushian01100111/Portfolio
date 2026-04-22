@@ -12,7 +12,7 @@ const Hero = () => {
     <m.div className="mainHero">
       <m.div className="hero">
           <div className="contentHero">
-              <h2 className="bigger gameFont"> {t("title")}</h2>
+              <h2 className="bigger bold"> {t("title")}</h2>
               <h3 className="small"> {t("sub-title")}</h3>
               <ul className="navList">
                 <li>
