@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import socialLinks from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
 import Hero from './components/Hero/Hero';
@@ -14,7 +15,22 @@ function App() {
     const targetSection = document.getElementById(`${target}`);
     targetSection.scrollIntoView({ behavior: "smooth" });
   }
+
+  const addRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const rect = addRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    addRef.current.style.setProperty("--mouse-x", `${x}px`);
+    addRef.current.style.setProperty("--mouse-y", `${y}px`);
+  };
+
   return (
+    <div className='Add'
+      ref={addRef}
+      onMouseMove={handleMouseMove}>
     <div className='App'>
       <div className='sideScroll'>
                 <Hero/>
@@ -53,6 +69,7 @@ function App() {
         </div>
         <ChangeLanguage/>
       </div>
+    </div>
     </div>
   )
 }

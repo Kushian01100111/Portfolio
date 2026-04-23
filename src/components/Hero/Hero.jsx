@@ -14,6 +14,7 @@ const Hero = () => {
           <div className="contentHero">
               <h2 className="bigger bold"> {t("title")}</h2>
               <h3 className="small"> {t("sub-title")}</h3>
+              <h4></h4>
               <ul className="navList">
                 <li>
                   <a href="#about" className="navLink">
