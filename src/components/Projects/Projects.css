@@ -12,7 +12,6 @@
         grid-template-rows: auto;
         grid-column-gap: 1.5rem;
         grid-row-gap: 0px;
-        margin: 0 auto;
     }
 
     .project.left{
@@ -21,7 +20,6 @@
         grid-template-rows: auto;
         grid-column-gap: 1.5rem;
         grid-row-gap: 0px;  
-        margin: 0 auto;
     }
     .projectContent.right{
         grid-area: 1 / 1 / 2 / 2;
@@ -42,10 +40,37 @@
 
 
 }
-.project{
-    color: rgb(217 215 215 / 87%);
-    padding: 5vh 0;
-    min-height: 50vh;
+.project {
+  position: relative;
+  color: rgb(217 215 215 / 87%);
+  margin: 5vh 0;
+  padding: 1.6rem 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  border-radius: 1rem;
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(63, 169, 45, 0.12);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  z-index: 0;
+
+}
+
+.project:hover::before,
+.project:focus-within::before {
+  opacity: 1;
+}
+
+.projectContent,
+.gifContainer {
+  position: relative;
+  z-index: 1;
 }
 
 .projectTitle{
@@ -63,8 +88,6 @@
 
 
 .leftt{
-    position: sticky;
-    top: 120px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -72,8 +95,6 @@
 }
 
 .rightt{
-    position: sticky;
-    top: 120px;
     display: flex;
     flex-direction: column;
     gap: 2rem;

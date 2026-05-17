@@ -9,7 +9,8 @@ const Projects = ({name, description, technologies, text, client, github, link, 
     <m.div
       initial="initial"
       whileInView="whileInView"
-      className={`project ${side}`}>
+      className={`project ${side}`}
+      >
       <div className={`projectContent ${side}`}>
         <div className={ side === "right" ? "rightt": 
                           side === "left" ? "leftt"
