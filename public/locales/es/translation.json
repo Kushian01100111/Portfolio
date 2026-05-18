@@ -1,0 +1,34 @@
+{
+    "title": "Pedro Comas",
+    "sub-title": "Fullstack developer",
+    "button": "Pongase en contacto",
+    "about": "Te hablo sobre mi",
+    "description":"Hola, mi nombre es Pedro Comas y soy alguien apasionado por la computación, la tecnología y el desarrollo de software. El comienzo de la cuarentena marco un cambio en mi en persona, desde ahí decidí profundizar mis previos conocimientos con el objetivo de poder dar a mi familia una vida mejor.",
+    "projects": {
+      "title": "Proyectos",
+      "part1": "Descripción del proyecto",
+      "part2": "Cliente",
+      "part3": "Ver el sitio"
+    },
+    "billy": {
+      "title": "Billy Coleman Porfolio",
+      "description": "Una muestra del trabajo realizado por el fotógrafo profesional Billy Coleman, uno de mis primeros clientes mientras trabajaba como freelance.",
+      "technology": "Tecnologias",
+      "tech": ["React.js", "Framer Motion", "Python", "Flask"],
+      "client":"Billy Coleman",
+      "site": "https://www.billycoleman.com/"
+    },
+    "frenzy": {
+      "title": "Frenzy Media",
+      "description": "El sitio web de la agencia digital Frenzy Media, la agencia se centra en la creación de anuncios y contenido personalizados para que sus clientes amplifiquen su alcance e ingresos en línea.",
+      "technology": "Tecnologias",
+      "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+      "client":"Carolina Albarracin",
+      "site": "https://frenzymedia.net/"
+    },
+    "form": {
+      "title": "Si quieres ponerte en contacto!",
+      "name": "Tu nombre?",
+      "message": "Mensaje"
+    }
+  }

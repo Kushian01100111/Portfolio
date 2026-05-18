@@ -1,0 +1,40 @@
+{
+  "title": "Pedro Comas",
+  "sub-title": "Full-Stack Developer",
+  "nav": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact" : "Contact"
+  },
+  "description": {
+    "part1" : "I'm Pedro Comas, a Computer Science student and full-stack developer with a strong interest in building software that is both practical and well designed. Over the past few years, I've worked on freelance, academic, and personal projects that gave me hands-on experience with React, Go, APIs, and databases.",
+    "part2" : "I like working across the full stack, but I'm especially interested in backend and systems-oriented challenges, where performance, correctness, and thoughtful design make a real difference.",
+    "part3" : "I'm currently focused on growing through projects that strengthen my foundations in scalable software, concurrency, and reliable system design, with the intention of continuing along that path during my degree through elective courses and, eventually, my thesis." 
+  },
+  "projects": {
+    "title": "Client Projects",
+    "part1": "Description",
+    "part2": "Client",
+    "part3": "View Site"
+  },
+  "billy": {
+    "title": "Billy Coleman Portfolio",
+    "description": "A portfolio site created for Billy Coleman to showcase his photography with a stronger visual identity and a smoother browsing experience.",
+    "technology": "Technologies",
+    "tech": ["React.js", "Framer Motion", "Python", "Flask"],
+    "site": "https://www.billycoleman.com/"
+  },
+  "frenzy": {
+    "title": "Frenzy Media",
+    "description": "A website built for Frenzy Media to give the agency a clearer online presence and a more direct way to present its services.",
+    "technology": "Technologies",
+    "tech": ["React.js", "Framer Motion", "Node.js", "Nodemailer"],
+    "site": "https://frenzymedia.net/"
+  },
+  "form": {
+    "title": "Get in Touch",
+    "name": "Your Name",
+    "message": "Message"
+  },
+  "button": "Get in Touch"
+}

@@ -1,0 +1,98 @@
+.navList {
+  margin-top: 4rem;
+  width: max-content;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  text-decoration: none;
+}
+
+.navIndicator {
+  margin-right: 1rem;
+  height: 1px;
+  width: 2rem;
+  background: #475569;
+  transition: all 0.15s ease;
+}
+
+.navText {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  transition: color 0.15s ease;
+}
+
+.navLink:hover .navIndicator,
+.navLink:focus-visible .navIndicator {
+  width: 4rem;
+  background: #e2e8f0;
+}
+
+.navLink:hover .navText,
+.navLink:focus-visible .navText {
+  color: #e2e8f0;
+}
+
+
+.hero{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: space-between;
+    padding: 8rem 4rem;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.mainHero{
+    height: 100%;
+}
+
+
+
+.socialLogs{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 0.25rem;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(148, 163, 184);
+  transition: color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.logos a:hover,
+.logos a:focus-visible {
+  color: rgb(94, 234, 212);
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(94, 234, 212, 0.25));
+}
+
+.logos svg {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: block;
+}
+
+
+
+
+@media (max-width: 500px) {
+    .mainHero{
+        height: 50vh;
+    }
+}

@@ -1,0 +1,85 @@
+
+/* Skill card */
+.skillsCard {
+  position: relative;
+  padding: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 1.25rem;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skillsCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    500px circle at 50% 50%,
+    rgba(45, 212, 191, 0.08),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.skillsCard:hover,
+.skillsCard:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(148, 163, 184, 0.24);
+  background: rgba(15, 23, 42, 0.58);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.skillsCard:hover::before,
+.skillsCard:focus-within::before {
+  opacity: 1;
+}
+
+.skillsCardIcon {
+  position: relative;
+  z-index: 1;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 0.9rem;
+  background: rgba(45, 212, 191, 0.08);
+  color: rgb(94, 234, 212);
+}
+
+.skillsCardTitle {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(226, 232, 240);
+}
+
+.skillsChips {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skillsChip {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(45, 212, 191, 0.18);
+  background: rgba(45, 212, 191, 0.08);
+  color: rgb(153, 246, 228);
+  font-size: 0.95rem;
+  line-height: 1;
+}
