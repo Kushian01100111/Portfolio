@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import socialLinks from './assets/imgs/Logos copy.js';
 import { useTranslation } from 'react-i18next';
 import Hero from './components/Hero/Hero';
+import Skills from './components/Skills/Skills.jsx';
 import MainDescription from './components/MainDescription/MainDescription';
 import Projects from './components/Projects/Projects';
 import Form from './components/Form/RefactorForm.jsx';
@@ -37,6 +37,7 @@ function App() {
       </div>
       <div className="content">
         <MainDescription/>
+        <Skills/>
         <div id='projects'>
           <div><h2 className='big'>{t("projects.title")}</h2></div>
           <Projects

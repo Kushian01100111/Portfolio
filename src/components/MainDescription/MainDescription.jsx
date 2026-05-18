@@ -11,7 +11,6 @@ const MainDescription = () => {
     <div>
         <m.div className="mainDescrition">
             <div className="contentDescription">
-                <div className="title"></div>
                 <div className="description">
                     <p className="small">{t("description.part1")}</p>
                     <p className="small">{t("description.part2")}</p>

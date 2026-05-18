@@ -55,6 +55,42 @@
     height: 100%;
 }
 
+
+
+.socialLogs{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 0.25rem;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(148, 163, 184);
+  transition: color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.logos a:hover,
+.logos a:focus-visible {
+  color: rgb(94, 234, 212);
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(94, 234, 212, 0.25));
+}
+
+.logos svg {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: block;
+}
+
+
+
+
 @media (max-width: 500px) {
     .mainHero{
         height: 50vh;

@@ -44,7 +44,7 @@
   position: relative;
   color: rgb(217 215 215 / 87%);
   margin: 5vh 0;
-  padding: 1.6rem 1rem;
+  padding: 1.6rem 1.6rem;
   overflow: hidden;
   transition: transform 0.2s ease;
   border-radius: 1rem;
@@ -54,7 +54,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(63, 169, 45, 0.12);
+  background: rgba(33, 59, 54, 0.75);
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;

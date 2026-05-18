@@ -1,5 +1,5 @@
 import "./Hero.css"
-import socialLinks from "../../assets/imgs/Logos copy"
+import socialLinks from "../../assets/imgs/Logos"
 import Button from "../Button"
 import {motion as m, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
@@ -38,13 +38,23 @@ const Hero = () => {
           </div>
           <div id="socials">
             <ul className="socialLogs">
-              {socialLinks.map((item) => (
-                <li className="logos" key={item.id}>
-                  <a href={item.href} target="_blank" rel="noreferrer">
-                    <img src={item.icon} alt={item.alt} />
-                  </a>
-                </li>
-              ))}
+              {socialLinks.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <li className="logos" key={item.id}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={item.label}
+                      title={item.label}
+                    >
+                      <Icon />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
         </div>
       </m.div>
